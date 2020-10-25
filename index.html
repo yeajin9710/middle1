@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+
+<body>
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/> 
+<style>
+html, body { width:1040px; height:785px; margin:0px; padding:0px; }
+.box {z-index: 999; width:1000px; position:relative;}
+.box img {
+   width:1000px; 
+   height:731px; 
+   border:0px; 
+   display:block;
+    position:absolute; top:189px; left:500px;}
+
+.logo{z-index: 999; width:683px; height: 287px; position:relative;}
+.logo img {
+   width:500px; 
+   height:181px; 
+   border:0px; 
+   display:block;
+   position:absolute; top:-425px; left:710px;}
+
+
+    /* transition: opacity 1.5s;  */
+
+
+
+/* .box:hover img:last-child { opacity:0 } */
+
+/*수정사항*/
+.box .img1 {
+  transition: opacity 0.5s;
+}
+.box .img2 {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.logo .logo {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.box:hover .img1 {opacity: 0;}
+.box:hover .img2 {opacity: 1;}
+.logo:hover  {opacity: 1;}
+</style>
+</head>
+<div class="stars"></div>
+<div class="twinkling"></div>
+<div class="clouds"></div>
+
+<body>
+<div class="box">
+    <img class="img1" src="pic/1.png">
+    <img class="img2" src="pic/2.png">
+</div>
+</body>
+
+<body>
+<div class="logo">
+    <img class="logo" src="pic/3.png">
+</div>
+</body>
+
+</html> 
+
+
+  </body>
+</html>
+
+
+
+
+<!--  <img src="pic/1.png" onmouseover="this.src='pic/2.png'" onmouseout="this.src='pic/1.png'"> >
+<!- <div class="grad"></div> >
